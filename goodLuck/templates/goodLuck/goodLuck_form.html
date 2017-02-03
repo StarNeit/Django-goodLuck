@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load staticfiles %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'polls/main.css' %}" />
+
+<script>
+$(function () {
+    $(document).ready(function() {
+    	$("#id_birthday").datepicker({
+    		changeMonth: true,
+            changeYear: true
+        });
+    });
+});
+</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Add New User</h1>
+		<form method="post">{% csrf_token %}
+		    {% for field in form %}
+		        <div class="fieldWrapper {{ field.name }}-12">
+		            {{ field.errors }}
+		            {{ field.label_tag }}: {{ field }}
+		        </div>
+		    {% endfor %}
+		    <input type="submit" class="addbtn" value="Add User" />
+		</form>
+	</div>
+
+</body>
+</html>

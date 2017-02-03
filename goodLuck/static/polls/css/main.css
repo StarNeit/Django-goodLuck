@@ -1,0 +1,76 @@
+
+select{
+	margin-bottom: 20px;
+	border-radius: 4px;
+	height: 40px;
+	background-color: #cccccc
+}
+#mainlist th{
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+   background-color: #ccc;
+   height: 	30px;
+   color:grey;
+}
+#mainlist td{
+   height: 	30px;
+   border-bottom: 1px solid #ddd;
+}
+.button-active{
+	color:#4488aa;
+}
+.button-deactive{
+	color:rgba(70,70,70,0.3);
+}
+.dialog{
+	display: none;
+}
+#id_name {
+	margin-left: 2.5%;
+}
+#id_birthday {
+	margin-left: 0.8%;
+}
+.addbtn {
+	color: white;
+    background-color: #cd3232;
+    margin-top: 2%;
+    margin-left: 6.3%;
+}
+.td-th {
+	background-color: #52544d;
+	color: white;
+	text-align: center;
+}
+.table-1 {
+	margin-bottom: 15px;
+}
+#id_randNum {
+	display: none;
+}
+#id_bizz {
+	display: none;
+}
+#id_eligible {
+	display: none;
+}
+.randNum-12 {
+	display: none;
+}
+.bizz-12 {
+	display: none;
+}
+
+.eligible-12 {
+	display: none;
+}
+.excel-export {
+	margin-top: 15px;
+}
+.new-btn {
+	margin-top: 20px;
+}
+.title-1 {
+	font-size: bold;
+	margin: 20px;
+}
